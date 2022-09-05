@@ -1,1 +1,3 @@
-# PythonTFG-Redes-Neuronales
+# Programas Python - TFG, Redes Neuronales
+
+En el presente repositorio...
