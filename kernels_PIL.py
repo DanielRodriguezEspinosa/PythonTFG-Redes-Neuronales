@@ -51,7 +51,7 @@ kernelValuesx=(-1,-1,-1,-1,8,-1,-1,-1,-1)
 kernelx=ImageFilter.Kernel((3,3), kernelValuesx, 1,0) # 1 es el valor por el que se divide a la suma de los
 # valores del kernel. La imagen no existira porque -1+...+8=0 y estaria siendo dividida entre 0.
 imagenx=img2.filter(kernelx)
-imagenx.save('EjesRubik.png')
+#imagenx.save('Bordes.png')
 #imagenx.show()
 
 # Sobel:
