@@ -12,16 +12,14 @@ Para usar los programas, descargar el repositorio (`Code` + `Download ZIP`) para
 
 ## Programas secundarios:
 
-- *Numbers.py* + *Numbers.html*: una vez descargados los programas, primero correr el programa python para luego abrir el *html*.
+- Escritura Números - HTML (*MNIST_CNN.py* + *index.html*: https://danielrodriguezespinosa.github.io/N-meros/ para probar la predicción de nuestra propia escritura en tiempo real.
+
+- *Gradient_Descent+.py*: se visualiza el algoritmo del descenso del gradiente.
 
 ## Programas extras:
 
-- *make_stamps.py*
+- *ModelPlot.py*: muestra la estructura de una *CNN*.
 
-- *make_stamps.py*
+- *kernels_PIL.py*: se aplican filtros a la imagen *donut.png*.
 
-- *make_stamps.py*
-
-- *make_stamps.py*
-
-https://github.com/DanielRodriguezEspinosa/PythonTFG-Redes-Neuronales/edit/main/README.md
+- *Activation_functions.py*: se grafican las funciones de activación sigmoide, *tanh*, mish, etcétera.
