@@ -53,7 +53,7 @@ def train(neural_net,X,Y,l2_cost,lr=0.5,train=True):
 		a=neural_net[l].act_func[0](z)
 		output.append((z,a))
 	if train:
-		# Backward pass:
+		# Backpropagation:
 		deltas=[]
 		for l in reversed(range(0,len(neural_net))):
 			z=output[l+1][0]
