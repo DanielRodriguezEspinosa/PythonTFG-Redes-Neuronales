@@ -5,7 +5,7 @@ from keras_visualizer import visualizer
 from keras import layers
 from neuralplot import ModelPlot
 
-#Creating Model
+# Creating Model (Example):
 X_input=Input(shape=(32,32,3))
 X=Conv2D(4, 3, activation='relu')(X_input)
 X=MaxPool2D(2,2)(X)
