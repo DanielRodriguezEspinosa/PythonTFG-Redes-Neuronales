@@ -69,44 +69,6 @@ for i, (imagen, etiqueta) in enumerate(_dataset_training.take(15)):
 #plt.savefig("stars-to-PIL.png")
 plt.show()
 ###
-print('Muestra de imagenes:\n')
-filas=5; columnas=2; num=filas*columnas
-index=[]
-for i in range(num):
-    index.append(random.randint(0,dataset_training.shape[0]))
-imagenes=dataset_training[index]; etiquetas=_metadata_training_[index]
-fig, axes=plt.subplots(filas, columnas, figsize=(1.5*columnas,2*filas))
-for i in range(num):
-    ax=axes[i//columnas, i%columnas]
-    plt.imshow(imagenes[i].reshape(60,60), cmap=plt.cm.binary)
-    ax.set_title('{}'.format(class_names[etiquetas[i]]))
-plt.tight_layout(); plt.show()
-###
-index=[]
-for i in range(num):
-    index.append(random.randint(0,dataset_training.shape[0]))
-imagenes=dataset_training[index]; etiquetas=_metadata_training_[index]
-"""
-print('Before -> ImageDataGenerator:\n')
-fig1, axes1=plt.subplots(filas, columnas, figsize=(1.5*columnas,2*filas))
-for i in range(num):
-    ax = axes1[i//columnas, i%columnas]
-    ax.imshow(dataset_training[i].reshape(60,60), cmap=plt.cm.binary)
-    ax.set_title('{}'.format(class_names[int(np.argmax(metadata_training[i]))]))
-plt.tight_layout()
-plt.show()
-###
-print('After -> ImageDataGenerator:\n')
-fig2, axes2=plt.subplots(filas, columnas, figsize=(1.5*columnas,2*filas))
-for X, Y in datagen.flow(dataset_training,metadata_training.reshape(metadata_training.shape[0],n_classes),batch_size=num,shuffle=False):
-    for i in range(num):
-        ax=axes2[i//columnas, i%columnas]
-        ax.imshow(X[i].reshape(60,60), cmap=plt.cm.binary)
-        print('Y[i]: ', Y[i])
-        ax.set_title('{}'.format(class_names[int(np.argmax(Y[i]))]))
-    break;
-plt.tight_layout(); plt.show()
-"""
 
 # building a linear stack of layers with the sequential model:
 opt='adam'
